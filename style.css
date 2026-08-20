@@ -1,0 +1,298 @@
+/* General Style */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+
+/* Header */
+
+.header {
+    background-color: #1f4e5f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+.profile-logo {
+    display: block;
+
+    margin: auto;
+}
+
+
+.main-title {
+    font-size: 36px;
+
+    margin: 15px;
+}
+
+
+.subtitle {
+    font-size: 20px;
+}
+
+
+
+/* File Upload */
+
+.file-label {
+    display: block;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+}
+
+
+.file-input {
+    margin-top: 10px;
+}
+
+
+
+/* Sections */
+
+.personal-section,
+.about-section,
+.languages-section,
+.programming-section,
+.education-section,
+.projects-section,
+.activities-section,
+.video-section,
+.audio-section,
+.contact-section {
+
+    background-color: white;
+
+    width: 80%;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #cccccc;
+}
+
+
+
+/* Section Titles */
+
+.section-title {
+
+    color: #1f4e5f;
+
+    border-bottom: 2px solid #1f4e5f;
+
+    padding-bottom: 8px;
+}
+
+
+.sub-title {
+
+    color: #333;
+
+    margin-top: 20px;
+}
+
+
+
+/* Text */
+
+.info-text {
+
+    font-size: 18px;
+}
+
+
+.about-text {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+.media-text {
+
+    font-size: 16px;
+}
+
+
+
+/* Lists */
+
+.skills-list,
+.project-list,
+.activities-list {
+
+    font-size: 18px;
+
+    line-height: 2;
+}
+
+
+
+/* Education Table */
+
+.education-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+.education-table th,
+.education-table td {
+
+    border: 1px solid #999;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+
+.education-table th {
+
+    background-color: #1f4e5f;
+
+    color: white;
+}
+
+
+.education-table tr:nth-child(even) {
+
+    background-color: #f2f2f2;
+}
+
+
+
+/* Video */
+
+.resume-video {
+
+    display: block;
+
+    margin: 20px auto;
+
+    max-width: 100%;
+}
+
+
+
+/* Audio */
+
+.resume-audio {
+
+    width: 100%;
+}
+
+
+
+/* Contact Form */
+
+.contact-form {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.form-label {
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+.form-input,
+.message-box {
+
+    width: 95%;
+
+    padding: 10px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+
+.message-box {
+
+    resize: vertical;
+}
+
+
+
+/* Button */
+
+.submit-button {
+
+    width: 150px;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    background-color: #1f4e5f;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.submit-button:hover {
+
+    background-color: #163a47;
+}
+
+
+
+/* Footer */
+
+.footer {
+
+    background-color: #1f4e5f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+.footer-text {
+
+    margin: 0;
+}
