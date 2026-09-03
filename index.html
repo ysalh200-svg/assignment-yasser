@@ -1,55 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guessing Number Game</title>
+</head>
 <body>
 
-<svg width="100" height="100">
-  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="RED" />
-  <text x="50" y="60" text-anchor="middle" font-size="30" fill="black" font-family="Arial">
-    Y
-  </text>
-</svg>
-<input type="file" id="myFile" name="filename">
-</body>
+<script>
 
-<body>
+function guessingGame() {
 
-   
-    
-    <h1>My Curriculum Vitae (CV)</h1>
+    // Generate a random number between 0 and 10
+    let randomNumber = Math.floor(Math.random() * 11);
 
-    <h2>Name</h2>
-    <p>Ahmed Ali</p>
+    let guess;
 
-    <h2>Major</h2>
-    <p>Computer Science</p>
+    // Ask the user to guess
+    do {
+        guess = Number(prompt("Guess a number between 0 and 10:"));
 
-    <h2>Languages I Speak</h2>
-    <ul>
-        <li>Arabic</li>
-        <li>English</li>
-    </ul>
+        if (guess === randomNumber) {
+            alert("Yeah, you guessed it!");
+        }
+        else if (guess < randomNumber) {
+            alert("Too low, try again!");
+        }
+        else if (guess > randomNumber) {
+            alert("Too high, try again!");
+        }
 
-    <h2>Programming Languages</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-    </ul>
+    } while (guess !== randomNumber);
+}
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Personal Portfolio Website</li>
-        <li>Restaurant Website</li>
-        <li>Student Management System</li>
-    </ul>
 
-    <h2>Activities</h2>
-    <ul>
-        <li>Volunteer at University Events</li>
-        <li>Programming Club Member</li>
-        <li>Participated in Hackathon</li>
-    </ul>
+function playGame() {
+
+    let playAgain = true;
+
+    while (playAgain) {
+
+        guessingGame();
+
+        playAgain = confirm("Do you want to play again?");
+
+    }
+
+    alert("Game Over. Goodbye!");
+}
+
+
+// Start the game
+playGame();
+
+</script>
 
 </body>
 </html>
