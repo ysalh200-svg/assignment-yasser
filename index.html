@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    
     <meta charset="UTF-8">
-    <title>Guessing Number Game</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <title> Palestine </title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
+    <h1> Palestine </h1>
 
-<script>
+     <svg  width="320" height="130" xmlns="http://www.w3.org/2000/svg">
+     <rect width="300" height="100" x="10" y="10" style="fill:rgb(0, 255, 21);stroke-width:3;stroke:rgb(0, 0, 0)" />
+     <text x="160" y="70" font-size="50" text-anchor="middle" fill="white"> Palestine </text>
 
-function guessingGame() {
+    </svg>
 
-    // Generate a random number between 0 and 10
-    let randomNumber = Math.floor(Math.random() * 11);
+    </style>
 
-    let guess;
-
-    // Ask the user to guess
-    do {
-        guess = Number(prompt("Guess a number between 0 and 10:"));
-
-        if (guess === randomNumber) {
-            alert("Yeah, you guessed it!");
-        }
-        else if (guess < randomNumber) {
-            alert("Too low, try again!");
-        }
-        else if (guess > randomNumber) {
-            alert("Too high, try again!");
-        }
-
-    } while (guess !== randomNumber);
-}
+     <ul>
+         <li><a href="#Introduction">Introduction</a></li>
+         <li><a href="#Palestinian Governorates">Palestinian Governorates</a></li>
+         <li><a href="#contact">Contact</a></li>
+         <li><a href="#Bottom">Bottom</a></li>
+     </ul>
 
 
-function playGame() {
+    <p> 
+        Palestine is a geographical region and a de jure sovereign state located in Western Asia, in the heart of the Middle East 
+        <br>
+        <h4>Geographical Location</h4>
+        Palestine is situated in the southeastern section of the eastern Mediterranean coast. It serves as a link between the three continents of the Old World: Asia, Africa, and Europe. It is bordered by Egypt to the southwest and adjoins the Jordan Valley and the eastern region.
+        
+        <h4>Religious and Cultural Significance</h4>
+        Palestine is home to numerous religious holy sites, most notably the Al-Aqsa Mosque in Jerusalem and the birthplace of Christ (peace be upon him) in Bethlehem. Jericho is considered one of the oldest continuously inhabited historic cities in the world; it was settled by the Canaanites as early as the third millennium BCE and was historically known as the Land of Canaan.
+        <br>
+        <h4>Political Status and Population</h4>
+        The State of Palestine claims Jerusalem as its capital, and its territory encompasses the West Bank and the Gaza Strip. The Palestinian population numbers in the millions, distributed across the homeland, the diaspora, areas under occupation, and regions under the local administration of the Palestinian Authority. The Palestinian cause is defined by a historic conflict that has persisted since the mid-20th century, spanning the establishment of Israel in 1948 and the occupation of the remaining territories in 1967.
+    </p>
 
-    let playAgain = true;
-
-    while (playAgain) {
-
-        guessingGame();
-
-        playAgain = confirm("Do you want to play again?");
-
-    }
-
-    alert("Game Over. Goodbye!");
-}
+    
 
 
-// Start the game
-playGame();
+   
 
-</script>
+     
 
 </body>
 </html>
